@@ -13,23 +13,86 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 130vh;
     margin: 0;
+    min-height: 100vh;
 }
 
-main,
-.main-content {
-    flex: 1;
+html,
+body {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    height: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .hidden {
     display: none;
 }
 
+#hero-header {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('Images/hero-background.png');
+    padding-bottom: 7.5rem;
+}
+
 header {
     display: flex;
     gap: 90vh;
-    border-bottom: 2px solid hsl(0, 0%, 20%);
+}
+
+#hero-section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+#hero-div {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+#hero-div h2 {
+    font-size: 4rem;
+    font-family: 'lato', 'sans-serif';
+    font-weight: bold;
+    text-align: center;
+}
+
+#pmenu-div {
+    display: flex;
+    margin-top: 0;
+    gap: 2rem;
+    align-items: center;
+}
+
+#pmenu-div p {
+    font-size: 1.3rem;
+    font-family: 'lato', 'sans-serif';
+    font-weight: bold;
+}
+
+#pmenu-div button{
+    width: 6rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+    font-family: 'lato', 'sans-serif';
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+}
+
+#pmenu-div button:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 #timg-div {
@@ -81,6 +144,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
+    border:none;
 }
 
 #nav-bar button:hover {
@@ -88,17 +152,17 @@ header {
     box-shadow: 2px 10px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-hr {
-    border: none;
-    height: 0.25rem;
-    background-color: hsla(0, 0%, 0%, 0.687);
-}
-
 footer {
     display: flex;
     align-items: bottom;
     border-top: 2px solid hsl(0, 0%, 20%);
     padding: 1rem;
+    background-color: antiquewhite;
+    margin-bottom: 0;
+}
+
+footer:last-child {
+    margin-bottom: 0;
 }
 
 #footer-div {
@@ -122,7 +186,7 @@ footer {
     display: flex;
     gap: 1.2rem;
     margin-top: 4rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
 }
 
 #social-div a {
@@ -155,7 +219,7 @@ footer {
     transition: transform 0.15s;
 }
 
-#website-div a:hover{
+#website-div a:hover {
     transform: scale(1.1);
 }
 
@@ -189,10 +253,52 @@ footer {
     transition: transform 0.15s;
 }
 
-#legal-div a:hover{
+#legal-div a:hover {
     transform: scale(1.1);
 }
 
 #legal-div h3 {
     margin-bottom: 0;
+}
+
+main {
+    flex: 1;
+}
+
+#popular-foods {
+    display: flex;
+    background-color: hsl(0, 0%, 93%);
+    flex-direction: column;
+}
+
+#popular-foods h3{
+    font-family: 'lobster', 'sans-serif';
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#popular-foods p{
+    font-family: 'lato', 'sans-serif';
+    font-size: 1.7rem;
+    margin-top: 0;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.409);
+    color: black;
+}
+
+#popularfd-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    gap: 3rem;
+}
+
+#popularfd-title{
+    margin-bottom: 0;
+    margin-left: 4rem;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.479);
+    width: 20rem;
+}
+
+.popularfd img {
+    width: 30rem;
 }
