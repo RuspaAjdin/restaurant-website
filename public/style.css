@@ -36,7 +36,10 @@ body {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('Images/hero-background.png');
-    padding-bottom: 7.5rem;
+    padding-bottom: 10rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 header {
@@ -76,7 +79,7 @@ header {
     font-weight: bold;
 }
 
-#pmenu-div button{
+#pmenu-div button {
     width: 6rem;
     height: 3rem;
     background-color: black;
@@ -144,7 +147,7 @@ header {
     font-weight: bold;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
-    border:none;
+    border: none;
 }
 
 #nav-bar button:hover {
@@ -265,19 +268,22 @@ main {
     flex: 1;
 }
 
-#popular-foods {
+#popular-foods{
     display: flex;
     background-color: hsl(0, 0%, 93%);
     flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    border-top: 3px solid black;
 }
 
-#popular-foods h3{
+#popular-foods h3 {
     font-family: 'lobster', 'sans-serif';
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-#popular-foods p{
+#popular-foods p {
     font-family: 'lato', 'sans-serif';
     font-size: 1.7rem;
     margin-top: 0;
@@ -285,14 +291,14 @@ main {
     color: black;
 }
 
-#popularfd-container{
+#popularfd-container {
     display: flex;
     flex-direction: row;
     margin-top: 0;
     gap: 3rem;
 }
 
-#popularfd-title{
+#popularfd-title {
     margin-bottom: 0;
     margin-left: 4rem;
     border-bottom: 3px solid rgba(0, 0, 0, 0.479);
@@ -301,4 +307,70 @@ main {
 
 .popularfd img {
     width: 30rem;
+}
+
+#locationpic-section {
+    display: flex;
+    background-color: beige; 
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    border-top: 3px solid black;
+}
+
+#locationpic-section h3, #chefs-section h3{
+    font-family: 'lobster', 'sans-serif';
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+#locationpic-section p,  #chefs-section p {
+    font-family: 'lato', 'sans-serif';
+    font-size: 1.7rem;
+    margin-top: 0;
+    color: black;
+}
+
+#location-div {
+    display: flex;
+    flex-direction: row;
+    gap:5rem;
+}
+
+#locationpic-title {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.479);
+    width: 22rem;
+}
+
+.location-container img {
+    margin-top: 3rem;
+    width: 30rem;
+    border: 10px solid black;
+}
+
+#chefs-section {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    border-top: 3px solid black;
+}
+
+#chefs-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+#chefs-div img{
+    width: 30rem; 
+    border: 5px solid black;
+    margin-top:3rem;
+    margin-bottom:3rem;
 }
