@@ -4,7 +4,6 @@ let activeMenuSliders = [];
 
 //LOADS FLICKITY
 
-// Run the script as soon as the page loads
 window.addEventListener('load', function() {
     const categoryGalleries = document.querySelectorAll('.gallery');
     

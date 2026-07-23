@@ -60,7 +60,7 @@ header {
     border-bottom: 3px solid black;
 }
 
-#hero-home-section {
+#hero-section-home {
     display: flex;
     justify-content: center;
     background-image:
@@ -483,4 +483,94 @@ main {
     font-size: 1.1rem;
     font-weight: bold;
     color: #ff4a4a;
+}
+
+#hero-section-policy h2{
+    font-family: 'lato', 'sans-serif';
+    font-size: 4rem;
+    margin-left: 5rem;
+}
+
+#hero-section-policy h3{
+    font-family: 'lato', 'sans-serif';
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+#hero-section-policy p{
+    font-family: 'lato', 'sans-serif';
+    font-size: 1.8rem;
+    margin-left: 2rem;
+}
+
+#hero-section-policy ul li{
+    font-family: 'lato', 'sans-serif';
+    font-size: 1.2rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form h3{
+    font-family: 'lato', 'sans-serif';
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#contact-form span{
+    display: flex;
+    padding: 3rem;
+    font-size: 2rem;
+    font-family: 'lato', 'sans-serif';
+    gap: 2rem;
+}
+
+#email-input{
+    font-size: 1.2rem;
+    font-family: 'lato', 'sans-serif';
+    text-align: center;
+}
+
+#contact-form div{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    font-family: 'lato', 'sans-serif';
+    font-size: 2rem;
+}
+
+#user-feedback-input {
+    margin-top: 1rem;
+    min-height: 5rem;
+    max-height: 7rem;
+    max-width: 30rem;
+    min-width: 30rem;
+    text-align:start;
+    font-size: 1rem;
+}
+
+#form-submit-btn {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin-bottom: 4rem;
+    border: none;
+    border-radius: 50px;
+    font-family: 'lato' 'sans-serif';
+    font-weight: bold;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+#form-submit-btn:hover{
+    box-shadow: 0px 6.5px 0 rgba(0, 0, 0, 0.100);
+    transform: scale(1.1);
 }
