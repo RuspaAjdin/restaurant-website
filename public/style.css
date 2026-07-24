@@ -485,25 +485,25 @@ main {
     color: #ff4a4a;
 }
 
-#hero-section-policy h2{
+#hero-section-policy h2 {
     font-family: 'lato', 'sans-serif';
     font-size: 4rem;
     margin-left: 5rem;
 }
 
-#hero-section-policy h3{
+#hero-section-policy h3 {
     font-family: 'lato', 'sans-serif';
     font-size: 3rem;
     margin-left: 2rem;
 }
 
-#hero-section-policy p{
+#hero-section-policy p {
     font-family: 'lato', 'sans-serif';
     font-size: 1.8rem;
     margin-left: 2rem;
 }
 
-#hero-section-policy ul li{
+#hero-section-policy ul li {
     font-family: 'lato', 'sans-serif';
     font-size: 1.2rem;
 }
@@ -516,14 +516,14 @@ main {
     align-items: center;
 }
 
-#contact-form h3{
+#contact-form h3 {
     font-family: 'lato', 'sans-serif';
     font-size: 5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-#contact-form span{
+#contact-form span {
     display: flex;
     padding: 3rem;
     font-size: 2rem;
@@ -531,13 +531,13 @@ main {
     gap: 2rem;
 }
 
-#email-input{
+#email-input {
     font-size: 1.2rem;
     font-family: 'lato', 'sans-serif';
     text-align: center;
 }
 
-#contact-form div{
+#contact-form div {
     display: flex;
     flex-direction: column;
     width: 30rem;
@@ -551,7 +551,7 @@ main {
     max-height: 7rem;
     max-width: 30rem;
     min-width: 30rem;
-    text-align:start;
+    text-align: start;
     font-size: 1rem;
 }
 
@@ -570,7 +570,145 @@ main {
     transition: box-shadow 0.2s ease, transform 0.2s ease;
 }
 
-#form-submit-btn:hover{
+#form-submit-btn:hover {
     box-shadow: 0px 6.5px 0 rgba(0, 0, 0, 0.100);
     transform: scale(1.1);
+}
+
+#transparency-auth {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#authentication-screen {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#authentication-screen span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#authentication-screen input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#authentication-screen .btn-social {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+}
+
+/* NASAO SAM DA JE VRLO BITNO DA JE SVE POD !IMPORTANT GOOGLE DOKUMENTACIJA TAKO TRAZI DA BI SAVRSENA RADILO */
+
+.social-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.custom-google-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #ffffff !important;
+    color: #1f1f1f !important;
+    border: 1px solid #747775 !important;
+    border-radius: 4px !important;
+    height: 40px !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    text-decoration: none !important;
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    font-family: 'Roboto', Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    box-sizing: border-box !important;
+}
+
+.custom-google-btn:hover {
+    background-color: #f2f2f2 !important;
+    border-color: #747775 !important;
+    color: #1f1f1f !important;
+}
+
+.custom-google-btn img {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 8px !important;
+    display: block !important;
+}
+
+.custom-google-btn span {
+    display: block !important;
+}
+
+.btn-auth {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 40px !important;
+    width: 100% !important;
+    max-width: 280px !important;
+    text-decoration: none !important;
+    font-family: 'Roboto', Arial, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    border-radius: 4px !important;
+    transition: background-color 0.2s ease !important;
+    box-sizing: border-box !important;
+}
+
+.btn-github {
+    background-color: #24292e !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+.btn-github:hover {
+    background-color: #1b1f23 !important;
+    color: #ffffff !important;
+}
+
+.btn-auth img {
+    width: 18px !important;
+    height: 18px !important;
+    margin-right: 8px !important;
+    display: block !important;
+}
+
+.btn-auth span {
+    display: block !important;
 }

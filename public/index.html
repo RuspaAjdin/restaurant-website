@@ -11,8 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="app.js" defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 
 <body>
@@ -49,7 +53,6 @@
     </section>
 
     <main>
-
 
         <!-- HOME PAGE HTML -->
 
@@ -477,6 +480,48 @@
         </div>
 
     </footer>
+
+
+    <!-- AUTHENTICATION SCREEN -->
+
+    <div id="transparency-auth">
+        <div id="authentication-screen">
+            <span>
+                <h3>Bezvezni Restoran</h3>
+                <img src="" alt="Restaurant logo">
+            </span>
+
+            <div>
+                <label for=""></label>
+                <input type="email">
+            </div>
+            <div>
+                <label for=""></label>
+                <input type="password">
+                <a href="#">Forgot password?</a>
+            </div>
+            <div>
+                <button>Log in</button>
+                <p>Don't have an account?</p>
+                <a href="">sign up.</a>
+            </div>
+            <div>
+                <button class="custom-google-btn" type="button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
+                        alt="Google G Logo">
+                    <span>Sign in with Google</span>
+                </button>
+
+                <a class="btn-auth btn-github" href="#" role="button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
+                        alt="GitHub Logo">
+                    <span>Sign in with GitHub</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
