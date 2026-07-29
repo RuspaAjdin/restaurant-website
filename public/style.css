@@ -597,14 +597,26 @@ main {
     max-width: 400px;
     text-align: center;
     box-sizing: border-box;
+    font-family: 'lato', 'sans-serif';
+}
+
+#authentication-screen p,
+#authentication-screen h3 {
+    margin: 4px 0;
+    text-align: center;
 }
 
 #authentication-screen span {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+#authentication-screen a{
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
 #authentication-screen input {
@@ -625,90 +637,102 @@ main {
     text-decoration: none;
 }
 
-/* NASAO SAM DA JE VRLO BITNO DA JE SVE POD !IMPORTANT GOOGLE DOKUMENTACIJA TAKO TRAZI DA BI SAVRSENA RADILO */
+#authentication-screen label {
+    font-size: 1rem;
+}
 
-.social-login-container {
+.auth-input {
+    text-align: left;
+}
+
+.auth-input a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#log-in-auth {
+    margin-top: 1.2rem;
+}
+
+#log-in-auth a {
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#log-in-auth button {
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#google-auth {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#google-auth a {
+    text-decoration: none;
+}
+
+#google-auth-btn {
+    display: flex;
+    padding: 0.8rem 4rem;
+    border: 1px solid rgba(0, 0, 0, 0.43);
+    font-size: 1.2rem;
+    background-color: white;
+    position: relative;
     align-items: center;
-    gap: 12px;
-    margin-top: 20px;
-    width: 100%;
+    justify-content: center;
+    cursor: pointer;
 }
 
-.custom-google-btn {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    background-color: #ffffff !important;
-    color: #1f1f1f !important;
-    border: 1px solid #747775 !important;
-    border-radius: 4px !important;
-    height: 40px !important;
-    width: 100% !important;
-    max-width: 280px !important;
-    text-decoration: none !important;
-    appearance: none !important;
-    -webkit-appearance: none !important;
-    font-family: 'Roboto', Arial, sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    cursor: pointer !important;
-    transition: all 0.2s ease !important;
-    box-sizing: border-box !important;
+#google-auth-btn img {
+    position: absolute;
+    left: 1rem;
+    width: 18px;
+    height: 18px;
 }
 
-.custom-google-btn:hover {
-    background-color: #f2f2f2 !important;
-    border-color: #747775 !important;
-    color: #1f1f1f !important;
+#sign-up-screen {
+    margin-top: 1rem;
 }
 
-.custom-google-btn img {
-    width: 18px !important;
-    height: 18px !important;
-    margin-right: 8px !important;
-    display: block !important;
+#sign-up-screen button {
+    padding: 0.7rem 2rem;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-.custom-google-btn span {
-    display: block !important;
+#authentication-screen {
+    position: relative;
 }
 
-.btn-auth {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    height: 40px !important;
-    width: 100% !important;
-    max-width: 280px !important;
-    text-decoration: none !important;
-    font-family: 'Roboto', Arial, sans-serif !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-    border-radius: 4px !important;
-    transition: background-color 0.2s ease !important;
-    box-sizing: border-box !important;
+#close-auth-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    line-height: 1;
+    color: #666;
+    cursor: pointer;
+    padding: 0;
+    transition: color 0.2s ease;
 }
 
-.btn-github {
-    background-color: #24292e !important;
-    color: #ffffff !important;
-    border: none !important;
-}
-
-.btn-github:hover {
-    background-color: #1b1f23 !important;
-    color: #ffffff !important;
-}
-
-.btn-auth img {
-    width: 18px !important;
-    height: 18px !important;
-    margin-right: 8px !important;
-    display: block !important;
-}
-
-.btn-auth span {
-    display: block !important;
+#close-auth-btn:hover {
+    color: #000;
 }

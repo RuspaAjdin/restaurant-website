@@ -486,38 +486,44 @@
 
     <div id="transparency-auth">
         <div id="authentication-screen">
+
+            <button id="close-auth-btn">&times;</button>
+
             <span>
-                <h3>Bezvezni Restoran</h3>
-                <img src="" alt="Restaurant logo">
+                <h1 class="title">Bezvezni Restoran</h1>
+                <img src="Images/LOGO.png" width="70px" alt="Logo" class="logo">
             </span>
 
-            <div>
-                <label for=""></label>
+            <div class="auth-input">
+                <label for="">E-mail:</label>
                 <input type="email">
             </div>
-            <div>
-                <label for=""></label>
+            <div class="auth-input">
+                <label for="">Password:</label>
                 <input type="password">
-                <a href="#">Forgot password?</a>
             </div>
-            <div>
-                <button>Log in</button>
-                <p>Don't have an account?</p>
-                <a href="">sign up.</a>
-            </div>
-            <div>
-                <button class="custom-google-btn" type="button">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
-                        alt="Google G Logo">
-                    <span>Sign in with Google</span>
-                </button>
 
-                <a class="btn-auth btn-github" href="#" role="button">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg"
-                        alt="GitHub Logo">
-                    <span>Sign in with GitHub</span>
+            <div id="log-in-screen" class="">
+                <a href="#">Forgot password?</a>
+                <div id="log-in-auth">
+                    <button>Log in</button>
+                    <p>Don't have an account?</p>
+                    <a href="">sign up.</a>
+                </div>
+            </div>
+
+            <div id="sign-up-screen" class="hidden">
+                <button>Sign up</button>
+            </div>
+
+            <div id="google-auth">
+                <a href="#">
+                    <button id="google-auth-btn"> Sign in with Google
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg">
+                    </button>
                 </a>
             </div>
+
         </div>
     </div>
 
