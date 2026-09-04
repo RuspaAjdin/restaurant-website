@@ -36,27 +36,24 @@
         </nav>
     </header>
 
-    <section id="hero-section-home" class="hidden">
-        <div id="hero-home-div">
-            <h2>Okusite Razliku.</h2>
-            <div id="pmenu-div">
-                <p>Dobrodošli u restoran gdje se tradicija <br>spaja s modernim okusima...</p>
-                <a href="#" data-target="menu-view"><button type="button">Meni</button></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="hero-section-menu" class="hidden">
-        <div id="hero-menu-div">
-            <h2>Pogledajte Meni</h2>
-        </div>
-    </section>
-
     <main>
 
         <!-- HOME PAGE HTML -->
 
-        <div id="home-page" class="hidden spa-view">
+        <!-- ==================== HOME PAGE ==================== -->
+        <div id="home-page" class="spa-view hidden">
+
+            <!-- Hero za Home je sada UNUTAR home-page div-a -->
+            <section id="hero-section-home">
+                <div id="hero-home-div">
+                    <h2>Okusite Razliku.</h2>
+                    <div id="pmenu-div">
+                        <p>Dobrodošli u restoran gdje se tradicija <br>spaja s modernim okusima...</p>
+                        <a href="#" data-target="menu-view"><button type="button">Meni</button></a>
+                    </div>
+                </div>
+            </section>
+
             <section id="popular-foods">
                 <h3 id="popularfd-title">Our most popular</h3>
                 <div id="popularfd-container">
@@ -67,7 +64,6 @@
                             <p>Premium, hand-cut grilled steak</p>
                         </div>
                     </div>
-
                     <div class="popularfd">
                         <img src="Images/Foods/salmon.png" alt="salmon">
                         <div>
@@ -95,7 +91,6 @@
                             <p>Great view onto the nostalgic olden building <br>architecture.</p>
                         </div>
                     </div>
-
                     <div class="location-container">
                         <img src="Images/location2.png" alt="location-picture1">
                         <div>
@@ -128,208 +123,209 @@
             </section>
         </div>
 
-        <!-- MENU PAGE HTML -->
+        <!-- ==================== MENU PAGE ==================== -->
 
-        <div id="menu-page">
-            <section id="hero-section-menu" class="hidden spa-view">
+        <div id="menu-page" class="spa-view hidden">
 
-                <!-- ROŠTILJ / MESO CATEGORY -->
-                <div class="menu-category-section">
-                    <h3 class="category-title">Roštilj & Meso</h3>
-                    <div class="gallery meat-gallery">
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Ćevapi.png" alt="Ćevapi">
-                            <div class="food-info">
-                                <h4>Sarajevski Ćevapi</h4>
-                                <p>Tradicionalni juneći ćevapi u somunu sa lukom i kajmakom.</p>
-                                <span class="price">10.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Pljeskavica.png" alt="Pljeskavica">
-                            <div class="food-info">
-                                <h4>Gurmanska Pljeskavica</h4>
-                                <p>Meso punjeno sirom i ljutom papričicom, prilog pomfrit.</p>
-                                <span class="price">12.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Piletina.png" alt="Piletina">
-                            <div class="food-info">
-                                <h4>Piletina na Žaru</h4>
-                                <p>Sočni pileći file sa žara, sezonsko povrće i riža.</p>
-                                <span class="price">9.50 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Biftek.png" alt="Biftek">
-                            <div class="food-info">
-                                <h4>Juneći Biftek</h4>
-                                <p>Premium odrezak sa sosom od zelenog papra i mladim krompirom.</p>
-                                <span class="price">24.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Sausages.png" alt="Kobasice">
-                            <div class="food-info">
-                                <h4>Domaće Kobasice</h4>
-                                <p>Pikantne domaće kobasice sa senfom i domaći hljeb.</p>
-                                <span class="price">8.50 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Ranjici.png" alt="Ražnjići">
-                            <div class="food-info">
-                                <h4>Goveđi Ražnjići</h4>
-                                <p>Komadići mesa na štapiću marinirani u mediteranskom bilju.</p>
-                                <span class="price">11.00 KM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PREDJELA CATEGORY -->
-                <div class="menu-category-section">
-                    <h3 class="category-title">Predjela</h3>
-                    <div class="gallery appetizers-gallery">
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Meza.png" alt="Meza">
-                            <div class="food-info">
-                                <h4>Domaća Meza</h4>
-                                <p>Selekcija suhog mesa, domaćeg sira, uštipaka i kajmaka.</p>
-                                <span class="price">15.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Ustipci.png" alt="Uštipci">
-                            <div class="food-info">
-                                <h4>Uštipci sa Sirom</h4>
-                                <p>Vrući uštipci posluženi uz mladi sir i kajmak.</p>
-                                <span class="price">6.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Corba.png" alt="Čorba">
-                            <div class="food-info">
-                                <h4>Begova Čorba</h4>
-                                <p>Tradicionalna gusta čorba sa piletinom, bamijom i povrćem.</p>
-                                <span class="price">5.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Brusketti.png" alt="Brusketi">
-                            <div class="food-info">
-                                <h4>Brusketi Parparadajz</h4>
-                                <p>Tostirani hljeb sa paradajzom, bijelim lukom i maslinovim uljem.</p>
-                                <span class="price">5.50 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Pohovani-Sir.png" alt="Pohovani sir">
-                            <div class="food-info">
-                                <h4>Pohovani Sir</h4>
-                                <p>Hrskavi pohovani sir sa tartar sosom i limunom.</p>
-                                <span class="price">7.00 KM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- SALATE CATEGORY -->
-                <div class="menu-category-section">
-                    <h3 class="category-title">Salate</h3>
-                    <div class="gallery salads-gallery">
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Cezar.png" alt="Cezar">
-                            <div class="food-info">
-                                <h4>Cezar Salata</h4>
-                                <p>Grilovana piletina, hrskava slanina, krutoni i Cezar dresing.</p>
-                                <span class="price">9.50 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Urnebes.png" alt="Urnebes">
-                            <div class="food-info">
-                                <h4>Urnebes Salata</h4>
-                                <p>Pikantni spoj gnječenog domaćeg sira, tucane ljute paprike, belog luka i ulja.
-                                    Savršen prilog uz sve vrste roštilja.</p>
-                                <span class="price">4.50 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Sopska.png" alt="Šopska">
-                            <div class="food-info">
-                                <h4>Šopska Salata</h4>
-                                <p>Svježi paradajz, krastavac, paprika, luk i rendani slani sir.</p>
-                                <span class="price">5.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Grcka.png" alt="Grčka">
-                            <div class="food-info">
-                                <h4>Grčka Salata</h4>
-                                <p>Paradajz, paprika, krastavci, crne masline, feta sir i origano.</p>
-                                <span class="price">6.50 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Tuna-Salata.png" alt="Tuna">
-                            <div class="food-info">
-                                <h4>Tuna Salata</h4>
-                                <p>Komadići tune, zelena salata, kukuruz šećerac, luk i masline.</p>
-                                <span class="price">8.50 KM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PIĆA CATEGORY -->
-                <div class="menu-category-section">
-                    <h3 class="category-title">Pića</h3>
-                    <div class="gallery drinks-gallery">
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/pivo.png" alt="Pivo">
-                            <div class="food-info">
-                                <h4>Domaće Pivo</h4>
-                                <p>Točeno svijetlo pivo iz lokalne pivare, osvježavajuće.</p>
-                                <span class="price">3.50 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/vino.png" alt="Vino">
-                            <div class="food-info">
-                                <h4>Vrhunsko Crno Vino</h4>
-                                <p>Čaša domaćeg vrhunskog crnog vina bogatog okusa.</p>
-                                <span class="price">6.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/sok.png" alt="Sok">
-                            <div class="food-info">
-                                <h4>Prirodni Sok</h4>
-                                <p>Svježe cijeđeni sok od narandže, limuna ili jabuke.</p>
-                                <span class="price">4.00 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Kisela.png" alt="Kisela">
-                            <div class="food-info">
-                                <h4>Mineralna Voda</h4>
-                                <p>Gazirana prirodna mineralna voda, osvježenje uz jelo.</p>
-                                <span class="price">2.50 KM</span>
-                            </div>
-                        </div>
-                        <div class="gallery-cell">
-                            <img src="Images/Foods/Kafa.png" alt="Kafa">
-                            <div class="food-info">
-                                <h4>Domaća Kafa</h4>
-                                <p>Tradicionalna kafa servirana u džezvi uz rahat lokum.</p>
-                                <span class="price">2.50 KM</span>
-                            </div>
-                        </div>
-                    </div>
+            <section id="hero-section-menu">
+                <div id="hero-menu-div">
+                    <h2>Pogledajte Meni</h2>
                 </div>
             </section>
+
+            <div class="menu-category-section">
+                <h3 class="category-title">Roštilj & Meso</h3>
+                <div class="gallery meat-gallery">
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Ćevapi.png" alt="Ćevapi">
+                        <div class="food-info">
+                            <h4>Sarajevski Ćevapi</h4>
+                            <p>Tradicionalni juneći ćevapi u somunu sa lukom i kajmakom.</p>
+                            <span class="price">10.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Pljeskavica.png" alt="Pljeskavica">
+                        <div class="food-info">
+                            <h4>Gurmanska Pljeskavica</h4>
+                            <p>Meso punjeno sirom i ljutom papričicom, prilog pomfrit.</p>
+                            <span class="price">12.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Piletina.png" alt="Piletina">
+                        <div class="food-info">
+                            <h4>Piletina na Žaru</h4>
+                            <p>Sočni pileći file sa žara, sezonsko povrće i riža.</p>
+                            <span class="price">9.50 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Biftek.png" alt="Biftek">
+                        <div class="food-info">
+                            <h4>Juneći Biftek</h4>
+                            <p>Premium odrezak sa sosom od zelenog papra i mladim krompirom.</p>
+                            <span class="price">24.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Sausages.png" alt="Kobasice">
+                        <div class="food-info">
+                            <h4>Domaće Kobasice</h4>
+                            <p>Pikantne domaće kobasice sa senfom i domaći hljeb.</p>
+                            <span class="price">8.50 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Ranjici.png" alt="Ražnjići">
+                        <div class="food-info">
+                            <h4>Goveđi Ražnjići</h4>
+                            <p>Komadići mesa na štapiću marinirani u mediteranskom bilju.</p>
+                            <span class="price">11.00 KM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category-section">
+                <h3 class="category-title">Predjela</h3>
+                <div class="gallery appetizers-gallery">
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Meza.png" alt="Meza">
+                        <div class="food-info">
+                            <h4>Domaća Meza</h4>
+                            <p>Selekcija suhog mesa, domaćeg sira, uštipaka i kajmaka.</p>
+                            <span class="price">15.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Ustipci.png" alt="Uštipci">
+                        <div class="food-info">
+                            <h4>Uštipci sa Sirom</h4>
+                            <p>Vrući uštipci posluženi uz mladi sir i kajmak.</p>
+                            <span class="price">6.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Corba.png" alt="Čorba">
+                        <div class="food-info">
+                            <h4>Begova Čorba</h4>
+                            <p>Tradicionalna gusta čorba sa piletinom, bamijom i povrćem.</p>
+                            <span class="price">5.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Brusketti.png" alt="Brusketi">
+                        <div class="food-info">
+                            <h4>Brusketi Parparadajz</h4>
+                            <p>Tostirani hljeb sa paradajzom, bijelim lukom i maslinovim uljem.</p>
+                            <span class="price">5.50 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Pohovani-Sir.png" alt="Pohovani sir">
+                        <div class="food-info">
+                            <h4>Pohovani Sir</h4>
+                            <p>Hrskavi pohovani sir sa tartar sosom i limunom.</p>
+                            <span class="price">7.00 KM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category-section">
+                <h3 class="category-title">Salate</h3>
+                <div class="gallery salads-gallery">
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Cezar.png" alt="Cezar">
+                        <div class="food-info">
+                            <h4>Cezar Salata</h4>
+                            <p>Grilovana piletina, hrskava slanina, krutoni i Cezar dresing.</p>
+                            <span class="price">9.50 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Urnebes.png" alt="Urnebes">
+                        <div class="food-info">
+                            <h4>Urnebes Salata</h4>
+                            <p>Pikantni spoj gnječenog domaćeg sira, tucane ljute paprike, belog luka i ulja. Savršen
+                                prilog uz sve vrste roštilja.</p>
+                            <span class="price">4.50 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Sopska.png" alt="Šopska">
+                        <div class="food-info">
+                            <h4>Šopska Salata</h4>
+                            <p>Svježi paradajz, krastavac, paprika, luk i rendani slani sir.</p>
+                            <span class="price">5.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Grcka.png" alt="Grčka">
+                        <div class="food-info">
+                            <h4>Grčka Salata</h4>
+                            <p>Paradajz, paprika, krastavci, crne masline, feta sir i origano.</p>
+                            <span class="price">6.50 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Tuna-Salata.png" alt="Tuna">
+                        <div class="food-info">
+                            <h4>Tuna Salata</h4>
+                            <p>Komadići tune, zelena salata, kukuruz šećerac, luk i masline.</p>
+                            <span class="price">8.50 KM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category-section">
+                <h3 class="category-title">Pića</h3>
+                <div class="gallery drinks-gallery">
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/pivo.png" alt="Pivo">
+                        <div class="food-info">
+                            <h4>Domaće Pivo</h4>
+                            <p>Točeno svijetlo pivo iz lokalne pivare, osvježavajuće.</p>
+                            <span class="price">3.50 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/vino.png" alt="Vino">
+                        <div class="food-info">
+                            <h4>Vrhunsko Crno Vino</h4>
+                            <p>Čaša domaćeg vrhunskog crnog vina bogatog okusa.</p>
+                            <span class="price">6.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/sok.png" alt="Sok">
+                        <div class="food-info">
+                            <h4>Prirodni Sok</h4>
+                            <p>Svježe cijeđeni sok od narandže, limuna ili jabuke.</p>
+                            <span class="price">4.00 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Kisela.png" alt="Kisela">
+                        <div class="food-info">
+                            <h4>Mineralna Voda</h4>
+                            <p>Gazirana prirodna mineralna voda, osvježenje uz jelo.</p>
+                            <span class="price">2.50 KM</span>
+                        </div>
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="Images/Foods/Kafa.png" alt="Kafa">
+                        <div class="food-info">
+                            <h4>Domaća Kafa</h4>
+                            <p>Tradicionalna kafa servirana u džezvi uz rahat lokum.</p>
+                            <span class="price">2.50 KM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <!-- PRIVACY POLICY PAGE -->
@@ -416,14 +412,14 @@
 
         <!-- CONTACT US PAGE -->
 
-        <div id="contact-page" class="spa-view">
+        <div id="contact-page" class="hidden spa-view">
             <section id="contact-section">
                 <form id="contact-form">
                     <h3>Contact us</h3>
-                    <span>
+                    <div id="email-div">
                         <label for="email-input">Enter your e-mail:</label>
                         <input id="email-input" type="email" placeholder="example@gmail.com" required>
-                    </span>
+                    </div>
                     <div>
                         <label for="user-feedback-input">Enter your feedback:</label>
                         <textarea id="user-feedback-input" rows="2" cols="10"></textarea>
@@ -437,8 +433,10 @@
     <footer>
         <div id="footer-div">
             <div id="title-div">
-                <h1 class="title">Bezvezni Restoran</h1>
-                <img src="Images/LOGO.png" width="70px" alt="Logo" class="logo">
+                <div id="titlesub-div">
+                    <h1 class="title">Bezvezni Restoran</h1>
+                    <img src="Images/LOGO.png" width="70px" alt="Logo" class="logo">
+                </div>
                 <div id="social-div">
                     <a href="#">
                         <img src="Images/Social/facebook.png" alt="facebook">
@@ -484,7 +482,7 @@
 
     <!-- AUTHENTICATION SCREEN -->
 
-    <div id="transparency-auth">
+    <div id="transparency-auth" class="hidden">
         <div id="authentication-screen">
 
             <button id="close-auth-btn">&times;</button>
@@ -493,28 +491,31 @@
                 <h1 class="title">Bezvezni Restoran</h1>
                 <img src="Images/LOGO.png" width="70px" alt="Logo" class="logo">
             </span>
-
-            <div class="auth-input">
-                <label for="">E-mail:</label>
-                <input type="email">
-            </div>
-            <div class="auth-input">
-                <label for="">Password:</label>
-                <input type="password">
-            </div>
-
-            <div id="log-in-screen" class="">
-                <a href="#">Forgot password?</a>
-                <div id="log-in-auth">
-                    <button>Log in</button>
-                    <p>Don't have an account?</p>
-                    <a href="">sign up.</a>
+            <form>
+                <div class="auth-input">
+                    <label for="">E-mail:</label>
+                    <input type="email" required maxlength="50" minlength="11">
                 </div>
-            </div>
+                <div class="auth-input">
+                    <label for="">Password:</label>
+                    <input type="password" required maxlength="50" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number, one lowercase, one uppercase, and 8+ characters">
+                </div>
 
-            <div id="sign-up-screen" class="hidden">
-                <button>Sign up</button>
-            </div>
+                <div id="log-in-screen" class="">
+                    <a href="#" id="forgot-password-link">Forgot password?</a>
+                    <div id="log-in-auth">
+                        <button type="submit" data-target="log-in-btn">Log in</button>
+                        <p>Don't have an account?</p>
+                        <a href="#" data-target="sign-up">sign up.</a>
+                    </div>
+                </div>
+
+                <div id="sign-up-screen" class="hidden">
+                    <button type="submit" data-target="sign-up-btn">Sign up</button>
+                    <p>Already have an account?</p>
+                    <a href="#" data-target="log-in">log in.</a>
+                </div>
+            </form>
 
             <div id="google-auth">
                 <a href="#">
