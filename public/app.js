@@ -1,4 +1,4 @@
-const GOOGLE_CLIENT_ID = '699810988686-66196fruch6fc6i4jp13r8h801kbnips.apps.googleusercontent.com';
+const GOOGLE_CLIENT_ID = '699810988686-7dkm8ftbngpvlj1tguq2tr0p04ulm9at.apps.googleusercontent.com';
 
 const closeAuthBtn = document.getElementById('close-auth-btn');
 const transparencyAuth = document.getElementById('transparency-auth');
@@ -234,6 +234,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    /*
+
     if (googleAuthBtn) {
         googleAuthBtn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -271,4 +273,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initGoogleAuth();
     refreshSession();
+   */
 });
